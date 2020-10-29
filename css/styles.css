@@ -1,0 +1,116 @@
+body {
+  font-size: 16px;
+ font-family: "Comic Sans MS", cursive, sans-serif; 
+ color:solid black;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: gray;
+  border-radius: 0;
+  border: 4px solid black;
+  border-left: 0px;
+  border-right:0px;
+  margin-bottom:0px;
+  height:100px;
+}
+
+
+.navbar-brand {
+  padding-top: 20px;
+  padding-left:50px;
+  position:absolute;
+  left:0px;
+  top:0px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  color:#000;
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: solid black;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px;
+}
+.navbar-header button.navbar-toggle {
+  /*clear: both*/;
+  margin-top: 20px;
+}
+/* END HEADER */
+/*Main Content*/
+
+#meat,#beaf,#sushi{
+  background-color:darkgray;
+}
+/*** Large devices only ***/
+@media (min-width: 1200px) {
+  .col-lg-4{
+    width: 32.33333%;
+  }
+}
+
+/*** Medium devices only ***/
+@media (min-width: 767px) and (max-width: 1199px) {
+  #chicken{
+    margin-right: 4%;
+  }
+  #beef{
+    margin-right: 0px;
+  }
+
+  #sushi{
+    margin-top: 10px;
+  }
+  .col-md-6{
+    width: 48%;
+  }
+  .col-md-12{
+    width:96%
+  }
+  .internal-link{
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+   a:hover{
+    color: white;
+  }
+}
+
+
+
+
+/*** Small devices only ***/
+@media (max-width: 767px) {
+  .navbar-default .navbar-collapse{
+    border: none;
+    background-color: #99C5B5;
+  }
+  /*.col-md-6, .col-lg-4{
+    width: 100%;
+    margin-top: 10px;
+  }*/
+
+  #beef{
+    margin: 10px 0px;
+  }
+  .internal-link{
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+   a:hover{
+    color: white;
+  }
+} /*end media query*/
+
